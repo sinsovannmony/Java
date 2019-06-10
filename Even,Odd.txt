@@ -1,0 +1,13 @@
+import java.util.Scanner;
+public class Group1 {
+    public static void main(String [] args)
+    {
+        System.out.println("Enter the number to check number Even or Odd");
+        Scanner input = new Scanner(System.in);
+        int num = input.nextInt();
+        if(num%2==0)
+            System.out.println(num+" is Even");
+        else
+            System.out.println(num+" is Odd");
+    }
+}
