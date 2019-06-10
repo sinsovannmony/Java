@@ -1,0 +1,22 @@
+import java.util.Scanner;
+public class Group1 {
+    public static void main(String [] args)
+    {
+        int original , reverse=0, remainder;
+        System.out.println("Enter the number to check Palindrome number");
+        Scanner input = new Scanner(System.in);
+        int num = input.nextInt();
+
+        original=num;
+        while(num!=0)
+        {
+            remainder=num%10;
+            reverse = reverse*10+remainder;
+            num=num/10;
+        }
+        if(original==reverse)
+            System.out.println(original +" is Palindrome number");
+        else
+            System.out.println(original +" is not Palindrome");
+    }
+}
