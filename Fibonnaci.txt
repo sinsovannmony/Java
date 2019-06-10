@@ -1,0 +1,19 @@
+import java.util.Scanner;
+public class Group1 {
+    public static void main(String [] args)
+    {
+       int a,b,temp,i;
+        System.out.println("Enter the number for a and b");
+        Scanner input = new Scanner(System.in);
+        a=input.nextInt();
+        b=input.nextInt();
+        for(i=0;i<10;i++)
+        {
+            temp=a+b;
+            a=b;
+            b=temp;
+            System.out.println(temp);
+        }
+
+    }
+}
