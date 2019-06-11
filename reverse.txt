@@ -1,0 +1,16 @@
+import java.util.Scanner;
+public class Group1 {
+    public static void main(String [] args)
+    {
+        int num , reverse;
+        System.out.println("Enter the number for reverse");
+        Scanner input = new Scanner(System.in);
+        num = input.nextInt();
+        while(num!=0)
+        {
+            reverse = num%10;
+            System.out.print(reverse);
+            num/=10;
+        }
+    }
+    }
